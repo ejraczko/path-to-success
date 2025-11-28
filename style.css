@@ -1,0 +1,297 @@
+/* CSS BY Elli Raczkowski */
+
+/*IMPORTED FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/*CSS RESET*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*ROOT VARIABLES*/
+:root {
+    --teal-color: #4CA7C0;
+    --purple-color: #484FB7;
+    --lavender-color: #6B8FE7;
+    --yellow-color: #E9BB57;
+    --pink-color: #D9526F;
+    --darkgray-color: #1E1E1E;
+    --white-color: #ffffff;
+}
+
+/*GLOBAL STYLES (mobile first/small)*/
+
+body {
+    max-width: 450px;
+    font-family: 'Inter';
+    background-color: var(--lavender-color);
+    display: block;
+    margin: 0 auto;
+}
+
+header {
+    color: var(--white-color);
+    text-align: center;
+    align-content: center;
+    background-color: var(--purple-color);
+    padding: 2rem;
+    margin: auto;
+}
+
+header > p {
+    font-style: italic;
+    padding-top: 1rem;
+}
+
+h1 {
+    font-family: 'Kavoon';
+    font-size: 3em;
+}
+
+h2 {
+    font-family: 'Kavoon';
+    color: var(--white-color);
+    font-size: 2em;
+    padding-top: 1rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.75rem;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: var(--yellow-color);
+    font-weight: bold;
+    padding-left: 0.75rem;
+}
+
+h4 {
+    font-size: 1.15em;
+    color: var(--purple-color);
+    font-weight: bold;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+#nav {
+    background-color: var(--yellow-color);
+    margin: auto;
+    align-content: center;
+}
+
+#nav h2 {
+    font-size: 2em;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 0.5rem;
+    color: black;
+}
+
+#nav li {
+    background-color: var(--white-color);
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+li > a {
+    text-decoration: none;
+    color: var(--purple-color);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#nav a:hover {
+    color: var(--teal-color);
+}
+
+#services {
+    background-color: var(--purple-color);
+    padding: 0.75rem;
+}
+
+#one_on_one > section {
+    background-color: var(--white-color);
+    margin: 1rem;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    
+}
+
+#group_coaching > section {
+    background-color: var(--white-color);
+    margin: 1rem;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    
+}
+
+#workshops > section {
+    background-color: var(--white-color);
+    margin: 1rem;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    
+}
+
+#online_courses > section {
+    background-color: var(--white-color);
+    margin: 1rem;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    
+}
+
+#choose {
+    background-color: var(--pink-color);
+    padding: 0.75rem;
+}
+
+#choose > ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.75rem;
+    padding-top: 0.75rem;
+}
+
+li {
+    padding: 2.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 800;
+    border-radius: 0.75rem;
+}
+
+li:nth-child(1) {
+    background-color: var(--teal-color);
+}
+
+li:nth-child(2) {
+    background-color: var(--lavender-color);
+}
+
+li:nth-child(3) {
+    background-color: var(--yellow-color);
+}
+
+li:nth-child(4) {
+    background-color: var(--white-color);
+}
+
+#prices {
+    background-color: var(--purple-color);
+    padding: 0.75rem;
+}
+
+table {
+    background-color: var(--yellow-color);
+    justify-content: center;
+    padding: 1rem;
+    margin: 0.75rem auto;
+    border: 0.15rem solid var(--yellow-color);
+}
+
+th {
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+}
+
+td {
+    background-color: var(--white-color);
+    text-align: center;
+    padding: 0.75rem;
+    border: 0.15rem solid var(--yellow-color);
+}
+
+#first_step {
+    background-color: var(--pink-color);
+    padding: 0.75rem;
+    color: var(--white-color);
+}
+
+#first_step > p {
+    padding: 0.75rem;
+}
+
+#first_step a {
+    display: block;
+    width: 20rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: var(--white-color);
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    box-shadow: 0.15rem 0.15rem 0.15rem black;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--purple-color);
+    padding: 3rem;
+    color: var(--white-color);
+    font-size: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+footer a {
+    color: var(--white-color);
+}
+
+footer a:hover {
+    color: var(--pink-color);
+}
